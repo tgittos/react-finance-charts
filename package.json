@@ -1,0 +1,58 @@
+{
+  "name": "react-finance-charts",
+  "version": "1.0.0",
+  "description": "Financial charting for React-based applications",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf dist",
+    "build": "npm run clean; NODE_ENV=production rollup -c",
+    "start": "npm run clean; NODE_ENV=production rollup -c -w",
+    "styleguide": "npx styleguidist server",
+    "styleguide:build": "npx styleguidist build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.gittos.net:money-printer/react-finance-charts.git"
+  },
+  "keywords": [
+    "react",
+    "d3"
+  ],
+  "author": "Tim Gittos",
+  "private": true,
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.16.8",
+    "@babel/core": "^7.16.10",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-typescript": "^7.16.7",
+    "@types/react": "^17.0.38",
+    "@types/react-dom": "^17.0.11",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-runtime": "^6.26.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-styleguidist": "^11.1.8",
+    "rollup": "^2.64.0",
+    "rollup-plugin-sass": "^1.2.10",
+    "rollup-plugin-typescript2": "^0.31.1",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "@types/d3": "^7.1.0",
+    "d3": "^7.3.0",
+    "moment": "^2.29.1"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
